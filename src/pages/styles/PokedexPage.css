@@ -1,0 +1,128 @@
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2em;
+}
+
+.pokedex__img {
+  position: relative;
+  width: 15%;
+  top: 1em;
+  height: auto;
+  z-index: 1;
+  margin-left: 2em;
+  &:hover {
+    filter: brightness(1.2);
+  }
+}
+
+.pokedex--footer {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+}
+
+.footer__stripe--black {
+  background-color: #000000;
+  height: 20px;
+}
+
+.footer__stripe--red {
+  background-color: #FE1936;
+  height: 32px;
+}
+
+.circle--container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.outer--circle {
+  width: 40px;
+  height: 40px;
+  border: 5px solid #000;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -30px;
+}
+
+.inner--circle {
+  width: 20px;
+  height: 20px;
+  border: 3.5px solid #000;
+  background-color: #2d2d2d;
+  border-radius: 50%;
+}
+
+.poke__p {
+  width: 80%;
+  margin-top: 3em;
+}
+
+.span__name {
+  font-weight: bold;
+  color: #FE1936;
+}
+
+.container__form {
+  display: flex;
+  gap: 1em;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
+.poke__form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form__input {
+  padding: 12px 20px;
+  margin: 10px 0;
+  width: 230px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.form__btn {
+  padding: 10px 20px;
+  background-color: #FE1936;
+  color: #fff;
+  border-color: #ff092a;
+  font-size: 1em;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(1);
+    background-color: #ff4747;
+    border-color: #ff4747;
+    box-shadow: 0 8px 16px rgba(255, 71, 71);
+  }
+}
+
+.poke__cards {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+@media (max-width: 600px) {
+
+  .pokedex__img {
+    width: 35%;
+  }
+}
